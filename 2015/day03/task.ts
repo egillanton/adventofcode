@@ -35,5 +35,55 @@ console.log(
   `Houses that received at least one present: ${housesReceivedAtLeastOnePresent.size}`
 );
 
+// Part Two
+var santaX = 0;
+var santaY = 0;
+var roboSantaX = 0;
+var roboSantaY = 0;
 
+housesReceivedAtLeastOnePresent = new Set();
+housesReceivedAtLeastOnePresent.add(`${santaX},${santaY}`);
 
+for (let i = 0; i < input.length; i++) {
+  var symbol: string = input[i];
+
+  if (i % 2 == 0) {
+    // Santa moves
+    if (symbol == "^") {
+      // go up
+      santaY++;
+    } else if (symbol == ">") {
+      // go right
+      santaX++;
+    } else if (symbol == "v") {
+      // go down
+      santaY--;
+    } else if (symbol == "<") {
+      // go left
+      santaX--;
+    }
+
+    housesReceivedAtLeastOnePresent.add(`${santaX},${santaY}`);
+  } else {
+    // Robo-Santa moves
+    if (symbol == "^") {
+      // go up
+      roboSantaY++;
+    } else if (symbol == ">") {
+      // go right
+      roboSantaX++;
+    } else if (symbol == "v") {
+      // go down
+      roboSantaY--;
+    } else if (symbol == "<") {
+      // go left
+      roboSantaX--;
+    }
+
+    housesReceivedAtLeastOnePresent.add(`${roboSantaX},${roboSantaY}`);
+  }
+}
+
+console.log(
+  `Houses that received at least one present: ${housesReceivedAtLeastOnePresent.size}`
+);
