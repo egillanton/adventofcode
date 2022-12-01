@@ -14,3 +14,14 @@ while (hash.substring(0, 5) != "00000") {
 
 console.log(hash);
 console.log(i);
+
+// Part Two
+i = 0;
+hash = "";
+while (hash.substring(0, 6) != "000000") {
+  i++;
+  hash = md5(input + i);
+}
+
+console.log(hash);
+console.log(i);
