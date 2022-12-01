@@ -25,10 +25,6 @@ for (let i = 0; i < input.length; i++) {
   }
 
   housesReceivedAtLeastOnePresent.add(`${x},${y}`);
-
-  // if(!housesReceivedAtLeastOnePresent.has(`${x},${y}`)) {
-
-  // }
 }
 
 console.log(
