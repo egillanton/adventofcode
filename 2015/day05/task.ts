@@ -43,4 +43,31 @@ for (let i = 0; i < lines.length; i++) {
 console.log(`Number of nice strings: ${niceStrings}`); // Number of nice strings: 239
 
 // Is there a of-by-one bug in the puzzle?
+// Answer: THERE IS A BUG IN THE PUZZLE ON PURPOSE
 // My calculation is 239, but the puzzle says 238.
+
+// Part Two
+console.log("Part Two");
+
+niceStrings = 0;
+for (let i = 0; i < lines.length; i++) {
+  var line = lines[i];
+  if (line.length === 0) {
+    continue;
+  }
+  let pairOfAnyTwoLettersThatAppearsAtLeastTwice = false;
+  let letterThatRepeatsWithExactlyOneLetterBetweenThem = false;
+  for (let j = 0; j < line.length; j++) {
+    if (j > 1 && line[j - 2] == line[j]) {
+      letterThatRepeatsWithExactlyOneLetterBetweenThem = true;
+    }
+    if (j > 0 && line.substring(j + 1).indexOf(line.substring(j - 1, j + 1)) != -1) {
+      pairOfAnyTwoLettersThatAppearsAtLeastTwice = true;
+    }
+  }
+  if (pairOfAnyTwoLettersThatAppearsAtLeastTwice && letterThatRepeatsWithExactlyOneLetterBetweenThem) {
+    niceStrings++;
+  }
+}
+
+console.log(`Number of nice strings: ${niceStrings}`);
