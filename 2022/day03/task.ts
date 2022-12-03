@@ -111,4 +111,5 @@ for (var i = 0; i < lines.length; i = i + 3) {
   }
 }
 
+// Sum of the item type priorities: 2604
 console.log(`Part two: Sum of the priorities: ${sumOfTheItemTypePriorities}`);
