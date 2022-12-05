@@ -35,9 +35,14 @@ for (var i = 10; i < lines.length; i++) {
   var stackNumber2 = tokens[5];
   // console.log(stackNumber2);
 
-  // Move
+  var tempStack: string[] = [];
   for (var j = 0; j < count; j++) {
     var item = stackMap.get(stackNumber1)?.pop();
+    tempStack.push(item as string);
+  }
+
+  for (var j = 0; j < count; j++) {
+    var item = tempStack?.pop();
     stackMap.get(stackNumber2)?.push(item as string);
   }
 }
