@@ -64,7 +64,7 @@ The Elves just need to know which crate will end up on top of each stack; in thi
 
 After the rearrangement procedure completes, what crate ends up on top of each stack?
 
-Your puzzle answer was QPJPLMNNR.
+Your puzzle answer was **QPJPLMNNR**.
 
 The first half of this puzzle is complete! It provides one gold star: *
 
@@ -127,3 +127,13 @@ Finally, a single crate is still moved from stack 1 to stack 2, but now it's cra
 In this example, the CrateMover 9001 has put the crates in a totally different order: MCD.
 
 Before the rearrangement process finishes, update your simulation so that the Elves know where they should stand to be ready to unload the final supplies. After the rearrangement procedure completes, what crate ends up on top of each stack?
+
+Your puzzle answer was **BQDNWJPVJ**.
+
+Both parts of this puzzle are complete! They provide two gold stars: **
+
+At this point, you should return to your Advent calendar and try another puzzle.
+
+If you still want to see it, you can get your puzzle input.
+
+You can also [Share] this puzzle.
