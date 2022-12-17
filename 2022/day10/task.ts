@@ -147,4 +147,4 @@ while (i < INSTRUCTIONS.length || cpuBusy) {
 printCrtGrid(crtGrid);
 
 console.log("What eight capital letters appear on your CRT?");
-console.log("Answer: FZBPBFZF"); // Answer: 14720
+console.log("Answer: FZBPBFZF"); // Answer: FZBPBFZF
