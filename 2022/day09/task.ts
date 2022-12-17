@@ -8,4 +8,4 @@ const input = fs.readFileSync(path.join(__dirname, "input.txt"), "utf8");
 var positionsVisited = 0;
 
 console.log("How many positions does the tail of the rope visit at least once?");
-console.log("Answer:", positionsVisited);
+console.log("Answer:", positionsVisited); 
