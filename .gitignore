@@ -105,3 +105,6 @@ dist
 
 .vscode/
 package.json
+
+*/**/tempCodeRunnerFile.ts
+output.text
